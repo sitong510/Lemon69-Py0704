@@ -1,3 +1,5 @@
+import sys, io
+sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="gb18030")
 from Exercise.R_W_case import read_data
 from Exercise.http_request import http_request
 from Exercise.R_W_case import write_data
